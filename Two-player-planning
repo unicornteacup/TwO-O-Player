@@ -1,0 +1,45 @@
+Task 1: Extract Nouns for Classes
+
+Player
+Game
+Question
+
+
+Task 2: Write their roles
+Player
+  State: 
+  Lives remaining 3
+  Current turn true/false
+
+  Behaviour: 
+  Reduce Lives -=1
+  Switch turns true to false 
+
+
+Question
+  State: 
+  Question text 
+  Answer text
+
+  Behaviour: 
+  calculation based on args
+
+
+
+  Question class needs to: 
+  
+  - accept args from console and create question from these
+  - Calculate the answer to the question based on the args
+  - put correct or incorrect statement after answer is given
+
+
+  Player class needs to:
+
+  - store starting lives
+  - remove a life if question is incorrect
+  - switch current turn state after each question
+
+
+  Game class needs to:
+  - Check scores of the 2 players
+  - Stop the game and announce scores if 1 player drops to 0
