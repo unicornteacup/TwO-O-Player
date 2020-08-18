@@ -1,32 +1,10 @@
 
 
 class Question
+  attr_reader :first_number, :second_number, :answer
     def initialize 
-      puts "Player #{}"
-      @question = "What is #{} plus #{}"
-      @answer = (#{} + #{})
+      @first_number = rand 1..20
+      @second_number = rand 1..20
+      @answer = @first_number + @second_number
     end
-
-    def first_number
-      rand 1..20
-    end
-
-    def second_number
-      rand 1..20
-    end
-
-    def question 
-      puts "What is #{first_number} + #{second_number}?"
-    end
-
-    def answer
-      first_number + second_number
-    end
-
-   
-
-  end
-
-
-
-
+end

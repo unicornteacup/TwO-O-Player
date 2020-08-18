@@ -1,5 +1,5 @@
 class Player
-  attr_accessor :lives
+  attr_accessor :lives , :name
   
   def initialize(name)
     @name = name
@@ -9,8 +9,5 @@ class Player
   def lost_life
     @lives -= 1
   end 
-  
-  def inspect_player
-    "Player - #{name} has #{lives} lives"
-  end
+
 end
